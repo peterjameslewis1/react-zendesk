@@ -1,0 +1,66 @@
+.section-1 {
+  background-color: #fafafa;
+
+  &-container {
+
+    .laptop-img {
+      position: relative;
+
+      img {
+        position: absolute;
+        max-width: 170px;
+        left: 0;
+        top: -80px;
+      }
+    }
+
+    &__subheading {
+      h2 {
+        font-size: 45px;
+        color: #03363d;
+        margin: 0 0 30px 0;
+        font-family: @font-family;
+        font-weight: 700;
+      }
+    }
+
+    &__info {
+      p {
+        font-size: 22px;
+        font-weight: 400;
+        color: gray;
+        line-height: 28px;
+      }
+    }
+
+    &__triple-promo {
+      display: flex;
+      margin: 40px auto;
+      justify-content: center;
+
+      .promo {
+        flex: 1 1;
+        margin: 0 8px;
+        background-color: #fff;
+        padding: 25px;
+
+        h3 {
+          color: #03363d;
+          font-family: @font-family;
+          text-align: left;
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        p {
+          font-family: @font-family;
+          font-weight: 300;
+          font-size: 15px;
+          text-align: left;
+          color: #3d5154;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+}
