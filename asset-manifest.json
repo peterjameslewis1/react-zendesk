@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-zendesk/static/css/main.07575860.chunk.css",
+    "main.js": "/react-zendesk/static/js/main.41f6080f.chunk.js",
+    "main.js.map": "/react-zendesk/static/js/main.41f6080f.chunk.js.map",
+    "runtime-main.js": "/react-zendesk/static/js/runtime-main.4c334f90.js",
+    "runtime-main.js.map": "/react-zendesk/static/js/runtime-main.4c334f90.js.map",
+    "static/js/2.a63afae8.chunk.js": "/react-zendesk/static/js/2.a63afae8.chunk.js",
+    "static/js/2.a63afae8.chunk.js.map": "/react-zendesk/static/js/2.a63afae8.chunk.js.map",
+    "index.html": "/react-zendesk/index.html",
+    "precache-manifest.728479b3f6a722556cda263100182c9e.js": "/react-zendesk/precache-manifest.728479b3f6a722556cda263100182c9e.js",
+    "service-worker.js": "/react-zendesk/service-worker.js",
+    "static/css/main.07575860.chunk.css.map": "/react-zendesk/static/css/main.07575860.chunk.css.map",
+    "static/js/2.a63afae8.chunk.js.LICENSE.txt": "/react-zendesk/static/js/2.a63afae8.chunk.js.LICENSE.txt",
+    "static/media/Section1.less": "/react-zendesk/static/media/Section1.9dc12e71.less",
+    "static/media/Section2.less": "/react-zendesk/static/media/Section2.6e9c47d8.less"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c334f90.js",
+    "static/js/2.a63afae8.chunk.js",
+    "static/css/main.07575860.chunk.css",
+    "static/js/main.41f6080f.chunk.js"
+  ]
+}

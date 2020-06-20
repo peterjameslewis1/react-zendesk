@@ -1,0 +1,234 @@
+.section-2 {
+    &-container {
+        padding: 50px 20px 100px 20px !important;
+
+        &__heading {
+            h2 {
+                font-size: 32px;
+                font-family: 'Roboto';
+                margin: 0 0 10px 0;
+            }
+        }
+
+        &__toggle {
+            display: flex;
+            justify-content: center;
+
+            &-support,
+            &-sales {
+                font-family: 'Roboto';
+                font-weight: 600;
+                font-size: 14px;
+                margin: 15px;
+                padding: 15px 25px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: grey;
+                cursor: pointer;
+                position: relative;
+
+
+                &::after {
+                    border-bottom: 4px solid transparent;
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    transform: scaleX(0);
+                    transition: transform 250ms ease-in-out;
+                    width: 100%;
+                }
+
+                &:hover::after {
+                    border-bottom: 4px solid #03363d;
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        &__sales-info {
+            display: none !important;
+        }
+
+        &__support-info,
+        &__sales-info {
+            display: flex;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex: 50%;
+                text-align: left;
+
+                #staples-content {
+                    margin: 2rem 0 0 2rem;
+                    border-left: 3px solid gray;
+                    padding-left: 1.5rem;
+
+                    img {
+                        max-width: 170px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &-container {
+                    max-width: 80%;
+
+                    &:first-child {
+                        margin-bottom: 50px;
+                    }
+
+
+                    &__title {
+                        color: grey;
+                        font-family: 'Roboto';
+                        font-weight: 500 !important;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+
+                    h2 {
+                        font-size: 48px;
+                        color: #03363d;
+                        margin: 20px 0;
+                    }
+
+                    p {
+                        color: #3d5154;
+                        font-size: 16px;
+                        line-height: 25px;
+                        margin-bottom: 30px;
+                        margin-top: 0;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            &__img {
+                position: relative;
+                flex: 50%;
+                margin: 0 auto;
+
+
+                &-primary {
+                    max-width: 100%;
+                }
+
+                &-secondary {
+                    max-width: 90%;
+                    position: absolute;
+                    bottom: -50px;
+                    right: 0;
+
+                    @media screen and (max-width: 915px) {
+                        bottom: 100px;
+                        right: 0;
+                    }
+
+                    @media screen and (max-width: 799px) {
+                        right: 0px;
+                    }
+
+
+                    &-sales {
+                        max-width: 90%;
+                        position: absolute;
+                        bottom: -100px;
+                        left: -60px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 799px) {
+        right: 0px;
+
+        &-container {
+            padding: 50px 20px 20px 20px !important;
+
+            &__heading {
+                text-align: left;
+            }
+
+            &__toggle {
+                display: none;
+            }
+
+            &__sales-info {
+                display: flex !important;
+                flex-direction: column-reverse;
+                margin: 50px 20px;
+
+                &-text-container {
+                    max-width: 100%;
+
+                    &__title {
+                        font-size: 12px;
+                    }
+
+
+                    h2 {
+                        font-size: 34px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+                &__img {
+                    max-width: 80%;
+                    margin: 0 auto 70px auto;
+
+                    &-secondary-sales {
+                        bottom: -120px;
+                        left: 0;
+                        max-width: 100%;
+                    }
+                }
+
+                #staples-content {
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+                }
+            }
+
+            &__support-info {
+                flex-direction: column-reverse;
+                margin: 50px 20px;
+
+                &-text-container {
+                    max-width: 100%;
+
+                    &__title {
+                        font-size: 12px;
+                    }
+
+                    h2 {
+                        font-size: 34px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+                &__img {
+                    max-width: 80%;
+                    margin: 0 auto 70px auto;
+
+
+                    &-secondary {
+                        right: 0px;
+                        bottom: -80px;
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
