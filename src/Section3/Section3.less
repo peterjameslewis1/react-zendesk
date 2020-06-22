@@ -4,7 +4,11 @@
 
 
     &-container {
-        display: flex;
+            display: flex;
+   
+            @media screen and (max-width: 1130px) {
+                flex-direction: column-reverse;
+            }
 
         &-info {
             flex: 50%;
@@ -22,6 +26,18 @@
                         font-weight: 600;
                         margin: 0;
                     }
+
+                    p {
+                        font-size: 15px;
+                        transition: all 0.5s;
+                        border-bottom: 1px solid transparent;
+                        display: inline-block;
+
+                        &:hover {
+                            cursor: pointer;
+                            border-bottom: 1px solid white;
+                        }
+                    }
                 }
             }
 
@@ -33,8 +49,10 @@
                     flex: 1 1 47%;
                     text-align: left;
                     display: flex;
-                    margin: 0 5px 30px 5px;
+                    margin: 30px 5px;
                     cursor: pointer;
+                    transition: all 1s;
+
 
                     &-img {
                         background-repeat: no-repeat;
@@ -46,6 +64,7 @@
                         background-position: center;
                         margin-right: 20px;
                         background-size: 15px;
+                        transition: all 0.5s;
                     }
 
                     &-desc {
@@ -64,10 +83,22 @@
                             margin: 0;
                             font-size: 15px;
                             font-weight: 400;
+                            transition: all 0.5s;
+                        }
+                    }
+
+
+                    &:hover {
+                        .section-3-container-info__blocks-block-img {
+                            background-color: white!important;
+                        }
+
+                        p {
+                            cursor: pointer;
+                            text-decoration: underline;
                         }
                     }
                 }
-
             }
         }
 
@@ -77,6 +108,7 @@
 
             &__info {
                 text-align: left;
+
                 h2 {
                     font-size: 45px;
                     margin: 0;
@@ -88,8 +120,52 @@
                     font-weight: 300;
                 }
             }
+
+            &__img {
+
+                // .active {
+                //     display: block;
+                // }
+
+                // .hidden {
+                //     display: none;
+                // }
+
+                img {
+                    display: none;
+                    width: 100%;
+                }
+            }
         }
     }
 
+    @media screen and (max-width: 799px) {
+        
+        &-container {
+            padding: 50px 15px!important;
+            &-info,
+            &-text {
+                padding: 0;
+            }
 
+            &-text {
+                margin-bottom: 30px;
+                &__info {
+                    h2 {
+                        font-size: 38px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }                
+            }
+
+            &-info {
+
+            }
+
+
+
+        }
+    }
 }

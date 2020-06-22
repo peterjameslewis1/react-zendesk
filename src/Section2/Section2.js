@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Support from './Support/Support';
 import Sales from './Sales/Sales';
 import './Section2.less';
@@ -8,6 +8,7 @@ import './Section2.less';
 const Section = (props) => {
     const [showSupport, setShowSupport] = useState(true);
     const [showSales, setShowSales] = useState(false);
+    
 
 
    const showComponentHandler = (name) => {
@@ -20,6 +21,8 @@ const Section = (props) => {
             setShowSales(!showSales)
         }
     }
+
+        
     
 
     return(
@@ -35,8 +38,8 @@ const Section = (props) => {
                 </div>
                 { showSupport && <Support />}
                 { showSales && <Sales />}
-
-            </div>
+                { window.innerWidth < 800 ? <Sales /> : '' }
+                </div>
         </div>
     )
 }

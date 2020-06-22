@@ -3,6 +3,11 @@
 @import './Section1/Section1.less';
 @import './Section2/Section2.less';
 @import './Section3/Section3.css';
+@import './Section4/section4.css';
+@import './CustomerExp/CustomerExp.css';
+@import './CustomersLogos/CustomerLogos.css';
+@import './SectionArticles/SectionArticles.css';
+@import './Footer/Footer.css';
 
 @primary-colour: #fed6a8;
 @accent-colour: #174d4d;
@@ -13,7 +18,59 @@
   margin: 0;
   padding: 0;
 
+  .sticky-wrapper {
+    position: relative;
+    height: 3rem; /* We need to change this value */
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* this is optional and should be different for every project */
+  }
+  
+  .sticky .sticky-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,.13);
+    transform: translateZ(0);
 
 
+    .secondary-nav {
+      display: none;
+    }
+  }
+
+
+  .container {
+    max-width: 1115px;
+
+    @media screen and (max-width: 1130px) {
+      padding: 50px 25px;
+  }
+
+    .btn-blue {
+      display: inline-block;
+      text-decoration: none;
+      color: #30aabc;
+      font-weight: 500;
+      margin-right: 30px;
+      border-bottom: 2px solid transparent;
+      transition: all 0.5s;
+
+      i {
+        font-size: 12px;
+        margin-right: 10px;
+        line-height: 20px;
+      }
+
+      &:hover {
+        border-bottom: 2px solid #30aabc;
+      }
+    }
+  }
 
 }

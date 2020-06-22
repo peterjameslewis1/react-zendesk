@@ -1,0 +1,190 @@
+.customer-exp-container {
+  display: flex;
+  margin: 250px auto !important;
+}
+.customer-exp-container__text {
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: -500px;
+  opacity: 0;
+  transition: all 1s;
+}
+.customer-exp-container__text h2 {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: left;
+  color: #03363d;
+  margin: 50px 0 30px 0;
+}
+.customer-exp-container__text a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin-right: 30px;
+  background: #174d4d;
+  padding: 20px 30px;
+}
+.customer-exp-container__img {
+  flex: 1 1 30%;
+  position: relative;
+}
+.customer-exp-container__img .female {
+  width: 150px;
+  top: -50px;
+  right: 70px;
+  z-index: -1;
+}
+.customer-exp-container__img .female-1 {
+  width: 350px;
+  right: 220px;
+  top: 20px;
+  z-index: -1;
+}
+.customer-exp-container__img .male {
+  width: 230px;
+  bottom: -170px;
+  right: 0px;
+  z-index: -2;
+}
+.customer-exp-container__img img {
+  position: absolute;
+  transition: all 1s;
+  transform: scaleY(0);
+}
+.customer-exp .animation {
+  display: flex;
+  margin: 250px auto !important;
+  position: relative;
+  max-width: 1115px;
+}
+@media screen and (max-width: 1130px) {
+  .customer-exp .animation {
+    padding: 30px;
+    margin: 250px auto 180px 0 !important;
+  }
+}
+.customer-exp .animation .customer-exp-container__text {
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 1s;
+}
+@media screen and (max-width: 1130px) {
+  .customer-exp .animation .customer-exp-container__text {
+    padding-right: 80px;
+    flex: 1 1 60%;
+  }
+}
+.customer-exp .animation .customer-exp-container__text h2 {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: left;
+  color: #03363d;
+  margin: 50px 0 30px 0;
+}
+@media screen and (max-width: 1130px) {
+  .customer-exp .animation .customer-exp-container__text h2 {
+    font-size: 55px;
+  }
+}
+.customer-exp .animation .customer-exp-container__text a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin-right: 30px;
+  background: #174d4d;
+  padding: 20px 30px;
+}
+.customer-exp .animation .customer-exp-container__img {
+  flex: 1 1 30%;
+  position: relative;
+}
+.customer-exp .animation .customer-exp-container__img .female {
+  width: 150px;
+  top: -50px;
+  right: 70px;
+  z-index: -1;
+}
+@media screen and (max-width: 1130px) {
+  .customer-exp .animation .customer-exp-container__img .female {
+    right: 30px;
+    width: 110px;
+  }
+}
+.customer-exp .animation .customer-exp-container__img .female-1 {
+  width: 350px;
+  right: 220px;
+  top: 20px;
+  z-index: -1;
+}
+@media screen and (max-width: 1130px) {
+  .customer-exp .animation .customer-exp-container__img .female-1 {
+    width: 230px;
+    right: 130px;
+  }
+}
+.customer-exp .animation .customer-exp-container__img .male {
+  width: 230px;
+  bottom: -170px;
+  right: 0px;
+  z-index: -2;
+}
+@media screen and (max-width: 1130px) {
+  .customer-exp .animation .customer-exp-container__img .male {
+    bottom: -150px;
+    width: 160px;
+    right: 0px;
+  }
+}
+.customer-exp .animation .customer-exp-container__img img {
+  position: absolute;
+  transition: all 1s;
+  transform: scaleY(1);
+}
+@media screen and (max-width: 799px) {
+  .customer-exp {
+    display: none;
+  }
+  .customer-exp .animation {
+    flex-direction: column-reverse;
+    margin: 250px auto 0px 0 !important;
+  }
+  .customer-exp .animation .customer-exp-container__text {
+    padding: 0;
+    flex: 1 1 100%;
+  }
+  .customer-exp .animation .customer-exp-container__text h2 {
+    font-size: 34px;
+    font-weight: 800;
+  }
+  .customer-exp .animation .customer-exp-container__img {
+    margin-bottom: 400px;
+  }
+  .customer-exp .animation .customer-exp-container__img .female {
+    width: 110px;
+    right: 60px;
+    top: 50px;
+    z-index: 1;
+  }
+  .customer-exp .animation .customer-exp-container__img .female-1 {
+    width: 250px;
+    right: 160px;
+    top: 100px;
+    z-index: 10;
+  }
+  .customer-exp .animation .customer-exp-container__img .male {
+    bottom: -450px;
+    width: 140px;
+    right: 0px;
+    z-index: 1;
+  }
+}

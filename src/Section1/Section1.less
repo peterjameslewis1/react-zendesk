@@ -18,9 +18,14 @@
       h2 {
         font-size: 45px;
         color: #03363d;
-        margin: 0 0 30px 0;
-        font-family: @font-family;
+        margin: 0 auto 30px auto;
+        font-family: 'Roboto';
         font-weight: 700;
+
+        @media screen and (max-width: 1130px) {
+         max-width: 50%;
+         line-height: 55px;
+      }
       }
     }
 
@@ -46,21 +51,56 @@
 
         h3 {
           color: #03363d;
-          font-family: @font-family;
+          font-family: 'Roboto';
           text-align: left;
           font-size: 22px;
           font-weight: 600;
         }
 
         p {
-          font-family: @font-family;
-          font-weight: 300;
+          font-family: 'Roboto';
+          font-weight: 400;
           font-size: 15px;
           text-align: left;
           color: #3d5154;
           line-height: 23px;
+
+
+         
         }
       }
     }
   }
+
+  @media screen and (max-width: 799px) {
+    &-container {
+      .laptop-img {
+        img {
+          position: unset;
+          top: 0;
+          width: 140px;
+        }
+      }
+
+      &__subheading {
+        margin-top: 50px;
+
+        h2 {
+          line-height: unset;
+          max-width: 100%;
+          font-size: 35px;
+        }
+      }
+
+      &__info {
+        p{
+          font-size: 18px;
+        }
+      }
+
+      &__triple-promo {
+        flex-direction: column;
+      }
+    }
+ }
 }

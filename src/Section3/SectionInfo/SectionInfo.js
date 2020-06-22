@@ -1,9 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SectionInfoBlock from './SectionInfoBlock/SectionInfoBlock';
 
 const SectionInfo = (props) => {
 
-    
+    let infoBlock = null;
+
+    infoBlock = (
+        props.data.map((data, index) => {
+            return <SectionInfoBlock 
+            index={data.key}
+            title={data.title}
+            text={data.text}
+            img={data.img}
+            key={index}
+            mouseover={props.hoverover}
+            mouseout={props.hoverout}
+            />
+        })
+    )
 
     return (
         <div className="section-3-container-info">
@@ -19,50 +33,7 @@ const SectionInfo = (props) => {
             </div>
 
             <div className="section-3-container-info__blocks">
-            <SectionInfoBlock 
-            title="support"
-            text="Integrated customer support >"
-            mouseover={props.hover}
-            />
-
-            <SectionInfoBlock 
-            title="sell"
-            text="Sales CRM >" 
-            mouseover={props.hover}
-            />
-
-            <SectionInfoBlock 
-            title="guide"
-            text="Knowledge base and smart self-service >" 
-            mouseover={props.hover}
-            />
-
-            <SectionInfoBlock 
-            title="explore"
-            text="Analytics and reporting >" 
-            mouseover={props.hover}
-            />
-
-            <SectionInfoBlock 
-            title="chat"
-            text="Live chat and messaging >" 
-            mouseover={props.hover}
-            />
-            <SectionInfoBlock 
-            title="gather"
-            text="Community forum >" 
-            mouseover={props.hover}
-            />
-            <SectionInfoBlock 
-            title="talk"
-            text="Call center software >" 
-            mouseover={props.hover}
-            />
-            <SectionInfoBlock 
-            title="connect"
-            text="Proactive campaigns >" 
-            mouseover={props.hover}
-            />
+            {infoBlock }
             </div>
         </div>
     )

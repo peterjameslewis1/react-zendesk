@@ -18,9 +18,9 @@ const Section = (props) => {
                     <a href="#" className="trial-cta btn">Free trial</a>
                     <a href="#" className="demo-cta btn">View demo</a>
                 </div>
-                <div className="snail-img">
-                    <img src="https://d1eipm3vz40hy0.cloudfront.net/images/p-home/promos/snail.png"/>
-                </div>
+               
+                    <img src="https://d1eipm3vz40hy0.cloudfront.net/images/p-home/promos/snail.png" alt=""/>
+               
             </div>
         </div>
     )

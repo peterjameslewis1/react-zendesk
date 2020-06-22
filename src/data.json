@@ -1,0 +1,60 @@
+[
+    {
+        "title": "support",
+        "text": "Integrated customer support",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-support-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/support-2x.png",
+        "key": 0
+    },
+    {
+        "title": "sell",
+        "text": "Sales CRM",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-sell-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/sell-2x.png",
+        "key": 1
+    },
+    {
+        "title": "guide",
+        "text": "Knowledge base and smart self-service",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-guide-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/guide-2x.png",
+        "key": 2
+    },
+    {
+        "title": "explore",
+        "text": "Analytics and reporting",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-explore-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/explore-2x.png",
+        "key": 3
+    },
+    {
+        "title": "chat",
+        "text": "Live chat and messaging",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-chat-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/chat-2x.png",
+        "key": 4
+    },
+    {
+        "title": "gather",
+        "text": "Community forum",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-gather-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/gather-2x.png",
+        "key": 5
+    },
+    {
+        "title": "talk",
+        "text": "Call center software",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-talk-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/talk-2x.png",
+        "key": 6
+    },
+    {
+        "title": "connect",
+        "text": "Proactive campaigns",
+        "img": "https://d1eipm3vz40hy0.cloudfront.net/images/brand-kit/modules/product-icons/zendesk-connect-white-icon-plain.svg",
+        "hoverImg": "https://web-assets.zendesk.com/images/p-home/redesign-2019/products/connect-2x.png",
+        "key": 7
+    }
+    
+]
+    

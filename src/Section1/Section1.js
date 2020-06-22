@@ -8,11 +8,9 @@ const Section = (props) => {
         <div className="section-1">
             <div className="section-1-container container">
                 <div className="laptop-img">
-                    <img src="https://d1eipm3vz40hy0.cloudfront.net/images/p-home/promos/promo-laptop.png"/>
+                    <img src="https://d1eipm3vz40hy0.cloudfront.net/images/p-home/promos/promo-laptop.png" alt=""/>
                 </div>
-                <div className="section-1-container__heading">
-                    <h1></h1>
-                </div>
+                
                 <div className="section-1-container__subheading">
                     <h2>Powerful solutions <br/> for new challenges</h2>
                 </div>
