@@ -1,6 +1,6 @@
 {
   "homepage": "http://peterjameslewis1.github.io/react-zendesk",
-  "name": "Zendesk",
+  "name": "zendesk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
