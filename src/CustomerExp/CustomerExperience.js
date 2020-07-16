@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 
 const CustomerExperience = () => {
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        rootMargin: '-500px 0px',
         triggerOnce: true,
       })
 
