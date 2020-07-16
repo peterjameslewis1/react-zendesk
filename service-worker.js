@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-zendesk/precache-manifest.93deba565e63b8c7026a1d7f9e4db380.js"
+  "/react-zendesk/precache-manifest.5f3c2a04912c66080dd3f6918a376e9a.js"
 );
 
 self.addEventListener('message', (event) => {
