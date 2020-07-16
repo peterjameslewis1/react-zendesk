@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 
 const CustomerExperience = () => {
     const [ref, inView] = useInView({
-        rootMargin: '-500px 0px',
+        threshold: 0.5,
         triggerOnce: true,
       })
 
@@ -14,7 +14,7 @@ const CustomerExperience = () => {
         <div className="customer-exp">
          
                 
-            <div ref={ref} className={ inView  ? "animation" : 'customer-exp-container container' }>
+            <div ref={ref} className={ inView  ? "animation" : "customer-exp-container container" }>
                 <div className="customer-exp-container__text">
                     <div className="customer-exp-container__title">
                         <h2>The best customer experiences are built with Zendesk</h2>
